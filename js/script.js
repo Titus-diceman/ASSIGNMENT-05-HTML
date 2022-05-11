@@ -28,11 +28,11 @@ function buttonClicked() {
     if (currentSymbol == "negative") {
       bottomNumber = bottomNumber + 2
       answer = answer - (4 / bottomNumber)
-      currentAction = "positive"
+      currentSymbol = "positive"
     } else if (currentSymbol == "positive") {
       bottomNumber = bottomNumber + 2
       answer = answer + (4 / bottomNumber)
-      currentAction = "negative"
+      currentSymbol = "negative"
     }
     integer = integer - 1
   }
