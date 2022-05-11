@@ -36,7 +36,7 @@ function buttonClicked() {
         currentSymbol = "negative"
       }
     }
-    document.getElementById("output").innerHTML = answer.toFixed(10)
-    console.log(answer)
   }
+  document.getElementById("output").innerHTML = answer.toFixed(10)
+  console.log(answer)
 }
