@@ -24,20 +24,18 @@ function buttonClicked() {
   var bottomNumber = 1
   var answer = (4 / bottomNumber)
 
-  if (integer > 1) {
-    while (integer > 1) {
-      for (let counter = 0; counter < integer; counter++) {
-        if (currentSymbol == "negative") {
-          bottomNumber = bottomNumber + 2
-          answer = answer - (4 / bottomNumber)
-          currentSymbol = "positive"
-        } else if (currentSymbol == "positive") {
-          bottomNumber = bottomNumber + 2
-          answer = answer + (4 / bottomNumber)
-          currentSymbol = "negative"
+  if (integer > 0) {
+    for (let counter = 0; counter < integer; counter++) {
+      if (currentSymbol == "negative") {
+        bottomNumber = bottomNumber + 2
+        answer = answer - (4 / bottomNumber)
+        currentSymbol = "positive"
+      } else if (currentSymbol == "positive") {
+        bottomNumber = bottomNumber + 2
+        answer = answer + (4 / bottomNumber)
+        currentSymbol = "negative"
         }
       }
-    }
     document.getElementById("output").innerHTML = answer.toFixed(10)
     console.log()
   } else {
