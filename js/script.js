@@ -34,11 +34,9 @@ function buttonClicked() {
         bottomNumber = bottomNumber + 2
         answer = answer + (4 / bottomNumber)
         currentSymbol = "negative"
-        }
       }
+    }
     document.getElementById("output").innerHTML = answer.toFixed(10)
-    console.log()
-  } else {
-  document.getElementById("output").innerHTML = "Number must be above 0"
+    console.log(answer)
   }
 }
