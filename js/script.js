@@ -24,17 +24,23 @@ function buttonClicked() {
   var bottomNumber = 1
   var answer = (4 / bottomNumber)
 
-  while (integer > 1) {
-    if (currentSymbol == "negative") {
-      bottomNumber = bottomNumber + 2
-      answer = answer - (4 / bottomNumber)
-      currentSymbol = "positive"
-    } else if (currentSymbol == "positive") {
-      bottomNumber = bottomNumber + 2
-      answer = answer + (4 / bottomNumber)
-      currentSymbol = "negative"
+  if (integer > 1) {
+    while (integer > 1) {
+      for (let counter = 0; counter < integer; counter++) {
+        if (currentSymbol == "negative") {
+          bottomNumber = bottomNumber + 2
+          answer = answer - (4 / bottomNumber)
+          currentSymbol = "positive"
+        } else if (currentSymbol == "positive") {
+          bottomNumber = bottomNumber + 2
+          answer = answer + (4 / bottomNumber)
+          currentSymbol = "negative"
+        }
+      }
     }
-    integer = integer - 1
+    document.getElementById("output").innerHTML = answer.toFixed(10)
+    console.log()
+  } else {
+  document.getElementById("output").innerHTML = "Number must be above 0"
   }
-  document.getElementById("output").innerHTML = answer.toFixed(10)
 }
