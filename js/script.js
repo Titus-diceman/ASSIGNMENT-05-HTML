@@ -25,7 +25,7 @@ function buttonClicked() {
   var answer = (4 / bottomNumber)
 
   if (integer > 1) {
-    for (let counter = 0; counter < integer; counter++) {
+    for (let counter = 1; counter < integer; counter++) {
       if (currentSymbol == "negative") {
         bottomNumber = bottomNumber + 2
         answer = answer - (4 / bottomNumber)
