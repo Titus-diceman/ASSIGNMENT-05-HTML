@@ -22,17 +22,17 @@ function buttonClicked() {
   var integer = document.getElementById("integer").value
   var currentSymbol = "negative"
   var bottomNumber = 1
-  var answer = 0
+  var answer = (4 / bottom)
 
-  if (integer > 0) {
+  if (integer > 1) {
     for (let counter = 0; counter < integer; counter++) {
       if (currentSymbol == "negative") {
         bottomNumber = bottomNumber + 2
-        answer = answer + (4 / bottomNumber)
+        answer = answer - (4 / bottomNumber)
         currentSymbol = "positive"
       } else if (currentSymbol == "positive") {
         bottomNumber = bottomNumber + 2
-        answer = answer - (4 / bottomNumber)
+        answer = answer + (4 / bottomNumber)
         currentSymbol = "negative"
         }
       }
