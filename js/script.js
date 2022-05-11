@@ -36,5 +36,5 @@ function buttonClicked() {
     }
     integer = integer - 1
   }
-  document.getElementById("output").innerHTML = answer
+  document.getElementById("output").innerHTML = answer.toFixed(4)
 }
