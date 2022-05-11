@@ -21,11 +21,10 @@ function buttonClicked() {
 
   var integer = document.getElementById("integer").value
   var currentSymbol = "negative"
-  var bottomNumber = 1
-  var answer = (4 / bottomNumber)
+  var bottomNumber = 3
+  var answer = 4
 
   if (integer > 0) {
-    answer = answer + 4
     for (let counter = 0; counter < integer; counter++) {
       if (currentSymbol == "negative") {
         bottomNumber = bottomNumber + 2
